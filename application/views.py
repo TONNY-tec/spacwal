@@ -15,6 +15,8 @@ def vision(request):
 
 def mission(request):
     return render(request, 'mission.html')
+def team(request):
+    return render(request, 'team.html')
 
 def core_values(request):
     return render(request, 'values.html')
@@ -53,3 +55,5 @@ def contact_view(request):
         return redirect('contact')
 
     return render(request, 'contact.html')
+def services(request):
+    return render(request, 'services.html')

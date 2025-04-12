@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+{% load static %}
+
 <head>
     <meta charset="utf-8">
     <title>SPACWAL - Cleaning Services</title>
@@ -23,7 +25,6 @@
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    {% load static %}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../../static/css/style.css" rel="stylesheet">
     <link href="../../static/css/style.min.css" rel="stylesheet">
@@ -82,6 +83,8 @@
                             <a href="" class="nav-item nav-link active">Home</a>
                             <a href="{% url 'about' %}" class="nav-item nav-link">About Us</a>
                             <a href="{% url 'services_list' %}" class="nav-item nav-link">Service</a>
+                            <a href="{% url 'index' %}" class="nav-item nav-link active">Home</a>
+                            <a href="about.html" class="nav-item nav-link">About</a>
                             <a href="project.html" class="nav-item nav-link">Project</a>
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
@@ -236,108 +239,6 @@
         </div>
     </div>
     <!-- Video Modal End -->
-
-
-    <!-- Services Start -->
-    <div class="container">
-        <div class="d-flex flex-column align-items-center gap-3"> 
-            <h3><u>We specialize ‘n TouchE </u> </h3> 
-        <div class="row"> 
-            <div class="col-md-6>"> 
-        <div class="btn-group">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-                	General Office and House Cleaning ,floor ,windows etc
-            </button>
-            <ul class="dropdown-menu dropdown-menu-lg-end">
-              <li><button class="dropdown-item" type="button">Description1</button></li>
-              <li><button class="dropdown-item" type="button">Description2</button></li>
-            </ul>
-          </div>
-        </div><br>
-        <div class="col-md-6>"> 
-          <div class="btn-group">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-                    Carpet Vacuum ,upholstery, Sofas & Curtains 
-            </button>
-            <ul class="dropdown-menu dropdown-menu-lg-end">
-              <li><button class="dropdown-item" type="button">Description1</button></li>
-              <li><button class="dropdown-item" type="button">Description2</button></li>
-            </ul>
-          </div>
-        </div>
-    </div><br>
-          <div class="row"> 
-            <div class="col-md-6>"> 
-          <div class="btn-group">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-                	Car Vacuum ,wash and interior Valeting
-            </button>
-            <ul class="dropdown-menu dropdown-menu-lg-end">
-              <li><button class="dropdown-item" type="button">Description1</button></li>
-              <li><button class="dropdown-item" type="button">Description2</button></li>
-            </ul>
-          </div>
-        </div><br>
-        <div class="col-md-6>"> 
-          <div class="btn-group">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-                  Civil work ,Repairs ,plumbing, painting 
-            </button>
-            <ul class="dropdown-menu dropdown-menu-lg-end">
-              <li><button class="dropdown-item" type="button">Description1</button></li>
-              <li><button class="dropdown-item" type="button">Description2</button></li>
-            </ul>
-          </div>
-        </div>
-    </div><br>
-          <div class="row"> 
-            <div class="col-md-6>"> 
-          <div class="btn-group">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-            	Landscaping & lawn mowing
-            </button>
-            <ul class="dropdown-menu dropdown-menu-lg-end">
-              <li><button class="dropdown-item" type="button">Description1</button></li>
-              <li><button class="dropdown-item" type="button">Description2</button></li>
-            </ul>
-          </div>
-        </div><br>
-        <div class="col-md-6>"> 
-          <div class="btn-group">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-                Fumigation/Pest Control  
-            </button>
-            <ul class="dropdown-menu dropdown-menu-lg-end">
-              <li><button class="dropdown-item" type="button">Description1</button></li>
-              <li><button class="dropdown-item" type="button">Description2</button></li>
-            </ul>
-          </div>
-        </div>
-        </div><br>
-          <div class="row"> 
-            <div class="col-md-6>"> 
-          <div class="btn-group">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-                Garbage Control, Sewers and Drainage
-            </button>
-            <ul class="dropdown-menu dropdown-menu-lg-end">
-              <li><button class="dropdown-item" type="button">Description1</button></li>
-              <li><button class="dropdown-item" type="button">Description2</button></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-6>"> 
-            <div class="btn-group">
-              <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-                  Garbage Control, Sewers and Drainage
-              </button>
-              <ul class="dropdown-menu dropdown-menu-lg-end">
-                <li><button class="dropdown-item" type="button">Description1</button></li>
-                <li><button class="dropdown-item" type="button">Description2</button></li>
-              </ul>
-            </div>
-          </div>
-    </div>
     {% comment %} <div class="container-fluid bg-service py-5">
         <div class="container py-5">
             <div class="row ">
@@ -741,7 +642,7 @@
             </div>
         </div>
     </div>
-    <!-- Blog End -->
+
 
 
     <!-- Footer Start -->
