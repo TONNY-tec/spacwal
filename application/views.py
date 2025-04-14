@@ -19,6 +19,9 @@ def mission(request):
 def core_values(request):
     return render(request, 'values.html')
 
+def team(request):
+    return render(request, 'team.html')
+
 def services_list(request):
     return render(request, 'services_list.html')
 

@@ -10,4 +10,5 @@ urlpatterns = [
     path('values/', views.core_values, name='core_values'),
     path('services/', views.services_list, name='services_list'),
     path('contact/', views.contact_view, name='contact'),
+    path('team/', views.team, name='team'),
     ]
