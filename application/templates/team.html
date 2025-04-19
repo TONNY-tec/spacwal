@@ -1,117 +1,103 @@
-
-{% extends 'base.html' %} {% block content %} {% load static %}
-<section id="team" class="team">
-  <div class="container">
-    <div class="container my-5">
-        <div class="text-center mb-5">
-            <h2 class="text-success">Meet the Full SpacNwal Team</h2>
-            <p class="lead">Our professionals are the driving force behind our cleaning excellence.</p>
-        </div>
-    
-        <div class="row gy-4">
-            <!-- Full profile of The Team -->
-            <div class="col-md-6">
-                <div class="card h-100 shadow-sm">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="{% static 'img/charity.jpg' %}" class="img-fluid rounded-start" alt="Charity Ningala">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Charity Ningala</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Director</h6>
-                                <p class="card-text">
-                                    A graduate in Science and a holder of a Post Graduate Diploma in Project Management. With deep experience in environmental projects, Charity founded SpacNwal Services and has led the company with integrity and vision.
-                                </p>
-                            </div>
-                            <div class="social">
-                                <a href=""><i class="bi bi-twitter-x"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                              </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-    
-            
-    
-            <div class="col-md-6">
-                <div class="card h-100 shadow-sm">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="{% static 'img/lillian.jpg' %}" class="img-fluid rounded-start" alt="Lillian Kadide">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Lillian Kadide</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Administration Manager</h6>
-                                <p class="card-text">
-                                    Lillian has worked with several organizations in administrative roles and excels in customer service and public relations, making her indispensable in the smooth running of our operations.
-                                </p>
-                            </div>
-                            <div class="social">
-                                <a href=""><i class="bi bi-twitter-x"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                              </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="card h-100 shadow-sm">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="{% static 'img/achuti.jpg' %}" class="img-fluid rounded-start" alt="Mr. Achuti Mochama">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Mr. Achuti Mochama</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Technical Advisor</h6>
-                                <p class="card-text">
-                                    MSc in Environmental and Biosystems Engineering. Specializes in environmental safety, quality control, and operational efficiency.
-                                </p>
-                            </div>
-                            <div class="social">
-                                <a href=""><i class="bi bi-twitter-x"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                              </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="card h-100 shadow-sm">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="{% static 'img/ogata.jpg' %}" class="img-fluid rounded-start" alt="Mr. P Ogata">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Mr. P Ogata</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Technical Advisor</h6>
-                                <p class="card-text">
-                                    More than 15 years in the cleaning and Garbage control companies -Niken E.A, Canon Hygiene and Bumaka Services.
-                                </p>
-                            </div>
-                            <div class="social">
-                                <a href=""><i class="bi bi-twitter-x"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                              </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+{% extends "base.html" %} {% block content %}
+<div class="container my-5">
+  <div class="text-center mb-5">
+    <h2 class="text-success">Our Leadership & Technical Team</h2>
+    <p class="lead">
+      SpacNwal Services operates under a well-structured leadership and advisory
+      framework.
+    </p>
   </div>
-</section>
+
+  <div class="row gy-4">
+    <!-- Director -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card text-center shadow-sm h-100">
+        <div class="card-body">
+          <img
+            src="https://ui-avatars.com/api/?name=Director&background=198754&color=ffffff&size=128"
+            class="img-fluid rounded-circle mb-3"
+            alt="Director"
+          />
+          <h5 class="card-title text-success">Director</h5>
+          <p class="card-text small text-muted">
+            Oversees the strategic direction of SpacNwal, project development,
+            and environmental program leadership.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Admin Manager -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card text-center shadow-sm h-100">
+        <div class="card-body">
+          <img
+            src="https://ui-avatars.com/api/?name=Admin+Manager&background=198754&color=ffffff&size=128"
+            class="img-fluid rounded-circle mb-3"
+            alt="Admin Manager"
+          />
+          <h5 class="card-title text-success">Administration Manager</h5>
+          <p class="card-text small text-muted">
+            Manages organizational operations, customer relations, and
+            administrative support services.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technical Advisor 1 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card text-center shadow-sm h-100">
+        <div class="card-body">
+          <img
+            src="https://ui-avatars.com/api/?name=Technical+Advisor&background=198754&color=ffffff&size=128"
+            class="img-fluid rounded-circle mb-3"
+            alt="Technical Advisor"
+          />
+          <h5 class="card-title text-success">Technical Advisor</h5>
+          <p class="card-text small text-muted">
+            Provides expertise in biosystems, environmental safety, quality
+            assurance, and efficiency frameworks.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technical Advisor 2 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card text-center shadow-sm h-100">
+        <div class="card-body">
+          <img
+            src="https://ui-avatars.com/api/?name=Senior+Advisor&background=198754&color=ffffff&size=128"
+            class="img-fluid rounded-circle mb-3"
+            alt="Senior Advisor"
+          />
+          <h5 class="card-title text-success">Technical Advisor</h5>
+          <p class="card-text small text-muted">
+            Supports technical operations in cleaning, waste management, and
+            staff training with over 15 years’ experience.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Business Partner -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card text-center shadow-sm h-100">
+        <div class="card-body">
+          <img
+            src="https://ui-avatars.com/api/?name=Partner&background=198754&color=ffffff&size=128"
+            class="img-fluid rounded-circle mb-3"
+            alt="Partner"
+          />
+          <h5 class="card-title text-success">Business Partner</h5>
+          <p class="card-text small text-muted">
+            Supplies eco-friendly cleaning products and supports SpacNwal
+            through innovation and logistics partnerships.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}
