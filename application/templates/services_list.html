@@ -1,4 +1,4 @@
-{% extends "base.html" %} {% block content %}
+{% extends "base.html" %} {% block content %} {% load static %}
 <div class="container mt-5">
   <div class="text-center mb-5">
     <h2 class="text-success">Our Services</h2>
@@ -132,4 +132,74 @@
     </div>
   </div>
 </div>
+
+<!-- Trusted Products Section Start -->
+<div class="container py-5">
+  <div class="text-center mb-5">
+    <h6 class="text-secondary text-uppercase">Our Trusted Products</h6>
+    <h2 class="section-title">Quality Products We Use</h2>
+    <p class="text-muted mx-auto" style="max-width: 600px">
+      SpacNwal Services is committed to using safe, effective, and
+      environmentally friendly products in all our cleaning and hygiene
+      operations.
+    </p>
+  </div>
+  <div class="row g-4 justify-content-center">
+    <!-- Wash 'n Wax -->
+    <div class="col-md-4">
+      <div class="card border-0 shadow-sm">
+        <img
+          src="{% static 'img/wash_n_wax.jpg' %}"
+          class="card-img-top"
+          alt="Wash n Wax"
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title">Wash ‘n Wax</h5>
+          <p class="card-text">
+            Biodegradable, non-abrasive, economical car shampoo — perfect for
+            eco-friendly vehicle detailing.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- G1 Laundry -->
+    <div class="col-md-4">
+      <div class="card border-0 shadow-sm">
+        <img
+          src="{% static 'img/g1_laundry.jpg' %}"
+          class="card-img-top"
+          alt="G1 Laundry"
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title">G1 Laundry</h5>
+          <p class="card-text">
+            Ultra-concentrated and biodegradable laundry compound, ideal for
+            deep and gentle cleaning of textiles.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carpet Glo -->
+    <div class="col-md-4">
+      <div class="card border-0 shadow-sm">
+        <img
+          src="{% static 'img/carpet_glo.jpg' %}"
+          class="card-img-top"
+          alt="Carpet Glo"
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title">Carpet Glo</h5>
+          <p class="card-text">
+            Loosens and dissolves dirt, enhances carpet color, and revitalizes
+            your floor fabrics with every wash.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Trusted Products Section End -->
+
 {% endblock %}

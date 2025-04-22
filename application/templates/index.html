@@ -52,7 +52,20 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
       <div class="container">
+<<<<<<< HEAD
         <a class="navbar-brand fw-bold text-success" href=""
+=======
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="/">
+          <img
+            src="{% static 'img/spacnwal.logo.png' %}"
+            alt="SpacNwal Logo"
+            height="40"
+            class="me-2"
+          />
+        </a>
+        <a class="navbar-brand fw-bold text-success" href="#"
+>>>>>>> 50905ee74a95392bd215a9e1504a16c66c4f3a12
           >SpacNwal Services</a
         >
         <button
@@ -101,7 +114,7 @@
       <div class="row align-items-center">
         <div class="col-lg-6">
           <img
-            src="{% static 'img/about-cleaning.jpg' %}"
+            src="{% static 'img/about.jpg' %}"
             alt="About Us"
             class="img-fluid rounded"
           />
@@ -230,6 +243,64 @@
     </div>
     <!-- Testimonial End -->
 
+    <!-- Product Showcase Start -->
+    <div class="container py-5">
+      <div class="text-center mb-5">
+        <h6 class="text-secondary text-uppercase">Golden Home Care</h6>
+        <h2 class="section-title">Featured Products</h2>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm">
+            <img
+              src="{% static 'img/wash_n_wax.jpg' %}"
+              class="card-img-top"
+              alt="Wash n Wax"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Wash ‘n Wax</h5>
+              <p class="card-text">
+                Biodegradable car shampoo. Non-abrasive, economical, and
+                effective.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm">
+            <img
+              src="{% static 'img/g1_laundry.jpg' %}"
+              class="card-img-top"
+              alt="G1 Laundry"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">G1 Laundry</h5>
+              <p class="card-text">
+                Ultra-concentrated biodegradable laundry compound for fresher
+                clothes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm">
+            <img
+              src="{% static 'img/carpet_glo.jpg' %}"
+              class="card-img-top"
+              alt="Carpet Glo"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Carpet Glo</h5>
+              <p class="card-text">
+                Loosens dirt, enhances color — perfect for carpet restoration.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Product Showcase End -->
+
     <!-- Why Us -->
 
     <div class="container-fluid py-5 bg-light">
@@ -309,92 +380,90 @@
           <div class="col-lg-12 text-center mb-5">
             <h6 class="text-secondary text-uppercase">Our Team</h6>
             <h1 class="section-title mb-4">Meet the Experts Behind SpacNwal</h1>
+            <p class="text-muted">
+              SpacNwal Services is led by an experienced team with a strong
+              background in environmental management, administration, and
+              technical expertise.
+            </p>
           </div>
         </div>
+
         <div class="row g-4 justify-content-center">
-          <!-- Charity Ningala -->
+          <!-- Director -->
           <div class="col-lg-3 col-md-6">
             <div class="team text-center bg-white p-4 shadow-sm rounded">
               <img
-                src="{% static 'img/charity.jpg' %}"
+                src="https://ui-avatars.com/api/?name=Director&background=198754&color=fff&size=128"
                 class="img-fluid rounded-circle mb-3"
-                alt="Charity Ningala"
+                alt="Director"
               />
-              <h5 class="text-primary">Charity Ningala</h5>
-              <p class="text-muted">Director</p>
-              <p class="small">
-                Founder of SpacNwal with a solid background in science and
-                environmental management.
+              <h5 class="text-success">Director</h5>
+              <p class="small text-muted">
+                Provides overall strategic leadership and vision.
               </p>
               <a
                 href="{% url 'team' %}"
-                class="btn btn-sm btn-outline-primary mt-2"
+                class="btn btn-sm btn-outline-success mt-2"
                 >Learn More</a
               >
             </div>
           </div>
 
-          <!-- Lillian Kadide -->
+          <!-- Administration Manager -->
           <div class="col-lg-3 col-md-6">
             <div class="team text-center bg-white p-4 shadow-sm rounded">
               <img
-                src="{% static 'img/lillian.jpg' %}"
+                src="https://ui-avatars.com/api/?name=Admin+Manager&background=198754&color=fff&size=128"
                 class="img-fluid rounded-circle mb-3"
-                alt="Lillian Kadide"
+                alt="Admin Manager"
               />
-              <h5 class="text-primary">Lillian Kadide</h5>
-              <p class="text-muted">Admin Manager</p>
-              <p class="small">
-                Experienced in customer service and public relations within
-                operational roles.
+              <h5 class="text-success">Administration Manager</h5>
+              <p class="small text-muted">
+                Handles internal operations and client support.
               </p>
               <a
                 href="{% url 'team' %}"
-                class="btn btn-sm btn-outline-primary mt-2"
+                class="btn btn-sm btn-outline-success mt-2"
                 >Learn More</a
               >
             </div>
           </div>
 
-          <!-- Mr. Achuti Mochama -->
+          <!-- Technical Advisor -->
           <div class="col-lg-3 col-md-6">
             <div class="team text-center bg-white p-4 shadow-sm rounded">
               <img
-                src="{% static 'img/achuti.jpg' %}"
+                src="https://ui-avatars.com/api/?name=Technical+Advisor&background=198754&color=fff&size=128"
                 class="img-fluid rounded-circle mb-3"
-                alt="Achuti Mochama"
+                alt="Technical Advisor"
               />
-              <h5 class="text-primary">Mr. Achuti Mochama</h5>
-              <p class="text-muted">Technical Advisor</p>
-              <p class="small">
-                Environmental systems expert and consultant in safety & quality
-                management.
+              <h5 class="text-success">Technical Advisor</h5>
+              <p class="small text-muted">
+                Expert in environmental systems, safety, and quality control.
               </p>
               <a
                 href="{% url 'team' %}"
-                class="btn btn-sm btn-outline-primary mt-2"
+                class="btn btn-sm btn-outline-success mt-2"
                 >Learn More</a
               >
             </div>
           </div>
 
-          <!-- Mr. P Ogata -->
+          <!-- Business Partner -->
           <div class="col-lg-3 col-md-6">
             <div class="team text-center bg-white p-4 shadow-sm rounded">
               <img
-                src="{% static 'img/ogata.jpg' %}"
+                src="https://ui-avatars.com/api/?name=Partner&background=198754&color=fff&size=128"
                 class="img-fluid rounded-circle mb-3"
-                alt="P Ogata"
+                alt="Partner"
               />
-              <h5 class="text-primary">Mr. P Ogata</h5>
-              <p class="text-muted">Technical Advisor</p>
-              <p class="small">
-                Veteran expert with 15+ years in the cleaning and garbage
-                control industry.
+              <h5 class="text-success">Business Partner</h5>
+              <p class="small text-muted">
+                Supports product supply and innovation in hygiene services.
               </p>
               <a
                 href="{% url 'team' %}"
-                class="btn btn-sm btn-outline-primary mt-2"
+                class="btn btn-sm btn-outline-success mt-2"
                 >Learn More</a
               >
             </div>
@@ -418,7 +487,7 @@
           >
         </p>
         <p class="mt-2 small">
-          &copy; {{ year }} SpacNwal Services. All rights reserved.
+          &copy; 2025 SpacNwal Services. All rights reserved.
         </p>
       </div>
     </footer>
