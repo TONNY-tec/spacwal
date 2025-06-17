@@ -15,6 +15,7 @@ def vision(request):
 
 def mission(request):
     return render(request, 'mission.html')
+
 def team(request):
     return render(request, 'team.html')
 
@@ -26,6 +27,11 @@ def team(request):
 
 def services_list(request):
     return render(request, 'services_list.html')
+
+def spacnwal(request):
+    return render(request, 'spacnwal.html')
+def abroad(request):
+    return render(request, 'abroad.html')
 
 def contact_view(request):
     if request.method == 'POST':
@@ -45,7 +51,6 @@ def contact_view(request):
         Message:
         {message}
         """
-
         send_mail(
             subject,
             full_message,
